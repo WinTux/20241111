@@ -13,4 +13,10 @@ public class KafkaTopicConfig {
 				//.partitions(3)
 				.build();
 	}
+	@Bean
+	public NewTopic miSegundoTopic() {
+		return TopicBuilder.name("jsonTpc")
+				//.partitions(3)
+				.build();
+	}
 }
